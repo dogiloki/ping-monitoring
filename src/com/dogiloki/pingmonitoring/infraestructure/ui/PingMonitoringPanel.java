@@ -69,7 +69,7 @@ public class PingMonitoringPanel extends ClosablePanel{
                         }
                     }
                     text_pane.insert(Function.set(Function.getSafeSplit(line.split(":"),1),line)+"\n");
-                    //ping_log.save();
+                    ping_log.save();
                 }else if(!line.contains("byte") && !line.equals("")){
                     PingLog ping_log=new PingLog();
                     ping_log.ip=ping.ip;
@@ -87,7 +87,7 @@ public class PingMonitoringPanel extends ClosablePanel{
                             text_pane.insert(line+"\n");
                         }
                     }
-                    //ping_log.save();
+                    ping_log.save();
                 }
             });
             JPanel panel=new JPanel();

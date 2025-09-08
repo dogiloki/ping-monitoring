@@ -162,7 +162,9 @@ public final class MainForm extends javax.swing.JFrame{
     }// </editor-fold>//GEN-END:initComponents
 
     private void new_ping_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_new_ping_btnActionPerformed
-        new PingDialog(this,true,null).setVisible(true);
+        PingDialog ping_dialog=new PingDialog(this,true,null);
+        ping_dialog.setTitle("Nuevo direccionamimento");
+        ping_dialog.setVisible(true);
         this.loadPings();
     }//GEN-LAST:event_new_ping_btnActionPerformed
 
